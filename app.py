@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 app =  FastAPI(title="Stroke Prediction API", description="API for predicting stroke risk using XGBoost model", version="1.0.0")
 
 try:
-    with open("Health_Stroke_Pred/stroke_xgb_deploy.pkl", "rb") as f:
+    with open("stroke_xgb_deploy.pkl", "rb") as f:
         model_pipeline = pickle.load(f)
         logger.info("Model pipeline loaded successfully.")
 except FileNotFoundError:
