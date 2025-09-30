@@ -1,0 +1,8 @@
+__pycache__/
+EDA.ipynb
+healthcare-dataset-stroke-data.csv
+
+
+# Virtual envs (if you ever create one locally)
+.venv/
+.env/
